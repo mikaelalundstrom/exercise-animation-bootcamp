@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #ececec;
+    background-color: #efede6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,13 +28,13 @@ body {
 
 @keyframes four-corners {
     0% {
-        background-color: #96d143;
+        background-color: black;
         top: 0px;
         left: 0px;
     }
 
     5% {
-        background-color: #7a43d1;
+        background-color: rgb(255, 47, 0);
         top: 0px;
         left: 0px;
     }
@@ -42,43 +42,43 @@ body {
     25% {
         top: 0px;
         left: 450px;
-        background-color: #7a43d1
+        background-color: rgb(255, 47, 0);
     }
 
     30% {
         top: 0;
         left: 450px;
-        background-color: #d14343;
+        background-color: rgb(255, 225, 0);
     }
 
     50% {
         top: 450px;
         left: 450px;
-        background-color: #d14343;
+        background-color: rgb(255, 225, 0);
     }
 
     55% {
         top: 450px;
         left: 450px;
-        background-color: #43d1c5;
+        background-color: rgb(81, 0, 255);
     }
 
     75% {
         top: 450px;
         left: 0px;
-        background-color: #43d1c5;
+        background-color: rgb(81, 0, 255);
     }
 
     80% {
         top: 450px;
         left: 0px;
-        background-color: #96d143;
+        background-color: black;
     }
 
     100% {
         top: 0px;
         left: 0px;
-        background-color: #96d143;
+        background-color: black;
     }
 
 }
