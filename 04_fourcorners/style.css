@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    main {
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+
+        aside {
+            width: 50px;
+            height: 50px;
+            background-color: #96d143;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: four-corners 5s infinite;
+        }
+    }
+}
+
+@keyframes four-corners {
+    0% {
+        background-color: #96d143;
+        top: 0px;
+        left: 0px;
+    }
+
+    5% {
+        background-color: #7a43d1;
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 450px;
+        background-color: #7a43d1
+    }
+
+    30% {
+        top: 0;
+        left: 450px;
+        background-color: #d14343;
+    }
+
+    50% {
+        top: 450px;
+        left: 450px;
+        background-color: #d14343;
+    }
+
+    55% {
+        top: 450px;
+        left: 450px;
+        background-color: #43d1c5;
+    }
+
+    75% {
+        top: 450px;
+        left: 0px;
+        background-color: #43d1c5;
+    }
+
+    80% {
+        top: 450px;
+        left: 0px;
+        background-color: #96d143;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: #96d143;
+    }
+
+}
+
