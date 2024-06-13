@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/lfj2haa.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    body {
+        /* background */
+        background-color: black;
+        background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover;
+
+        /* typography */
+        color: #ffe820;
+        font-family: "news-gothic-std", sans-serif;
+        font-weight: bold;
+        font-size: 4.5rem;
+        text-align: justify;
+        
+        /* flex (centering) */
+        display: flex;
+        justify-content: center;
+        /* 3d setup */
+        perspective: 500px; 
+        perspective-origin: top; /* for the look-down perspective */
+        transform-style: preserve-3d;
+        position: relative;
+
+        /* always viewheight */
+        height: 100vh;
+        overflow: hidden;
+
+        main {
+            
+            position: absolute;
+            max-width: 1000px;
+            animation: crawl 60s linear infinite, fade-out linear 60s infinite; 
+        
+            &>* { /* all children */
+                width: 100%;
+                margin-bottom: 5rem;
+            }
+
+            .episode,
+            h1 {
+                text-align: center;
+            }
+            h1 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+@keyframes crawl { /* rotateX makes text 'lean back', 
+                      translateZ how close the text feels to the screen,
+                      translateY makes text scroll */
+    from { 
+        transform: rotateX(90deg) translateZ(800px) translateY(1600px);
+    }
+    to {
+        transform: rotateX(90deg) translateZ(800px) translateY(-3000px);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
